@@ -1,2 +1,2 @@
 # portfolio
-My portfolio. This cite is responsive
+My portfolio. This site is responsive
