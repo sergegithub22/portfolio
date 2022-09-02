@@ -133,7 +133,7 @@ footer {
 /*For mobile phone and tablets*/
 @media (min-width: 721px) and ( max-width: 1191px){
   .header h1 {
-    font-size: 1.7em;
+    font-size: 1.8em;
     margin-top: 0px;
     margin-bottom: 0px;
   }
@@ -145,6 +145,7 @@ footer {
   .portfolio_item {
     box-shadow: 0px 0px 18px black;
     margin: 30px;
+    opacity: 1;
     
   }
   .portfolio_item_cont img {
@@ -156,7 +157,11 @@ footer {
     color: CornflowerBlue;
     font-size: 1.3em;
   }
+  .blue_btn{
+	font-size: 1EM; 
+  }
 }
+
 @media  (max-width: 720px) {
   .portfolio_item {
     width: 85%;
@@ -179,9 +184,32 @@ footer {
     height: 100%;
 }
   .header h1 {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
   .header {
+    padding-top: 20px;
+	  padding-bottom: 20px;
     margin-bottom: 20px;
+  }
+  .portfolio_item h3 {
+    text-align: center;
+    color: CornflowerBlue;
+    font-size: 1.2em;
+  }
+  .blue_btn{
+	font-size: 1EM; 
+  }
+}
+@media (min-width: 550px ) and (max-width: 719px){
+  .header h1 {
+    font-size: 1.7em;
+  }
+  .portfolio_item h3 {
+    text-align: center;
+    color: CornflowerBlue;
+    font-size: 1.8em;
+  }
+  .blue_btn{
+	font-size: 1.28EM; 
   }
 }
