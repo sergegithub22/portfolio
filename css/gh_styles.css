@@ -194,10 +194,10 @@ footer {
   .portfolio_item h3 {
     text-align: center;
     color: CornflowerBlue;
-    font-size: 1.2em;
+    font-size: 1.3em;
   }
   .blue_btn{
-	font-size: 1EM; 
+	font-size: 1.15EM; 
   }
 }
 @media (min-width: 550px ) and (max-width: 719px){
@@ -210,6 +210,6 @@ footer {
     font-size: 1.8em;
   }
   .blue_btn{
-	font-size: 1.28EM; 
+	font-size: 1.38EM; 
   }
 }
