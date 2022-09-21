@@ -1,6 +1,6 @@
 # My portfolio
 My portfolio. This site is responsive.\
-Layout bilded on flex and grid.
+Layout built on flex and grid.
 ### Used:
  - HTML
  - CSS
