@@ -201,7 +201,7 @@ footer {
   }
   footer {
 	background-color: #002e4d   ;
-	
+	font-size: .7em;
 	text-align: center;
 	padding: 20px 0px 20px 0px;
 }
@@ -217,5 +217,8 @@ footer {
   }
   .blue_btn{
 	font-size: 1.38EM; 
+  }
+  footer {
+    font-size: .8em;
   }
 }
