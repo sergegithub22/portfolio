@@ -1,5 +1,5 @@
 # My portfolio
-My portfolio. This site is responsive.\
+My portfolio. Responsive.\
 Layout built on grid.
 ### Used:
  - HTML
