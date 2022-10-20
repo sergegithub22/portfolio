@@ -1,0 +1,58 @@
+@mixin pad_marg_0 {
+  padding: 0px;
+	margin: 0px;
+}
+@mixin marg_auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+@mixin button_style {
+  font-family: 'Goldman', Sans-Serif;
+  padding: 10px;
+  background-color: black;
+  border: 3px solid #0008a8; 
+  border-radius: 15px;
+  box-shadow: 0px 0px 3px #0008a8;
+  color: #8833ff;
+  transition-property: box-shadow, background-color, border, color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+body {
+  @include pad_marg_0;
+  background-color: #121212;
+}
+* {
+  box-sizing: border-box;
+}
+.wrapper {
+  width: 70%;
+  @include marg_auto;
+  background-color: black;
+}
+.main {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button {
+//  width: 20%;
+  text-align: center;
+  @include button_style;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 900;
+  &:hover {
+    box-shadow: 0px 0px 18px #FF0000;
+    transition-duration: 0s;
+    color: white;
+    border: 3px solid #FF0000;
+  }
+  &:active {
+    box-shadow: 0px 0px 38px #FF0000;
+    transition-duration: 0s;
+    color: white;
+    border: 3px solid #FF0000;
+  }
+}
