@@ -189,7 +189,7 @@ body {
   color: #00c2cc;
   text-transform: uppercase; }
 
-.resume__text {
+.resume__text, .portfolio__text {
   font-size: 20px;
   color: #006aff;
   font-weight: 900; }
