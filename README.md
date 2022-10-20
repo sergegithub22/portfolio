@@ -1,10 +1,10 @@
 # My portfolio
 My portfolio. This site is responsive.\
-Layout built on flex and grid.
+Layout built on grid.
 ### Used:
  - HTML
  - CSS
- - JS
+ - SCSS
+ - 3 free google fonts
 ### Third party assets: (thanks to all who made it :pray:)
- - JS
- > All credits in their files.
+ - # free google fonts
