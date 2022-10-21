@@ -21,7 +21,7 @@ body {
 .text {
   font-family: 'FiraSansExtraCondensed', Sans-Serif;
   font-size: 22px;
-  color: #006aff;
+  color: #388BFF;
   font-weight: 900; }
 
 .link {
@@ -42,7 +42,7 @@ body {
   margin-top: 0px;
   margin-bottom: 0px;
   text-align: center;
-  color: #9263F9;
+  color: #a34dff;
   font-size: 25px;
   font-weight: 700;
   font-family: 'Goldman', Sans-Serif;
@@ -55,7 +55,7 @@ body {
 .header__description {
   margin-top: 0px;
   text-align: center;
-  color: #006aff;
+  color: #4d97ff;
   font-size: 20px;
   font-family: 'Goldman', Sans-Serif;
   text-transform: uppercase; }
@@ -191,7 +191,7 @@ body {
 
 .resume__text, .portfolio__text {
   font-size: 20px;
-  color: #006aff;
+  color: #C42AF6;
   font-weight: 900; }
 
 .uppercase {
