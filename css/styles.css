@@ -42,7 +42,7 @@ body {
   margin-top: 0px;
   margin-bottom: 0px;
   text-align: center;
-  color: #0058D3;
+  color: #4d97ff;
   font-size: 25px;
   font-weight: 700;
   font-family: 'Goldman', Sans-Serif;
@@ -294,7 +294,7 @@ body {
     grid-gap: 30px;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    margin-top: 20px; }
+    margin-top: 40px; }
 
   .portfolio_items {
     grid-gap: 20px; }
@@ -334,7 +334,7 @@ body {
     grid-gap: 30px;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    margin-top: 20px; }
+    margin-top: 40px; }
 
   .portfolio_items {
     grid-gap: 20px; }
