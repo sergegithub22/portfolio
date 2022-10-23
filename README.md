@@ -7,4 +7,4 @@ Layout built on grid.
  - SCSS
  - 3 free google fonts
 ### Third party assets: (thanks to all who made it :pray:)
- - # free google fonts
+ - 3 free google fonts
