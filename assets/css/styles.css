@@ -26,17 +26,27 @@
 .text {
   font-family: "FiraSansExtraCondensed", Sans-Serif;
   font-size: 22px;
-  color: #388BFF;
+  color: rgb(85, 146, 172);
   font-weight: 900;
 }
 
 .link {
   font-family: "Goldman", Sans-Serif;
   text-decoration: none;
-  color: #CB30FF;
+  color: #599247;
+  font-size: 23px;
 }
-.link:hover {
-  color: white;
+.link--about {
+  width: 100%;
+  display: block;
+  padding: 10px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.link--about:hover {
+  background-color: rgb(0, 49, 70);
+  border-radius: 20px;
 }
 
 .header {
@@ -51,7 +61,7 @@
   margin-top: 0px;
   margin-bottom: 0px;
   text-align: center;
-  color: #a34dff;
+  color: #4d97ff;
   font-size: 25px;
   font-weight: 700;
   font-family: "Goldman", Sans-Serif;
@@ -90,7 +100,7 @@
 
 .about-me {
   grid-area: 1/1/2/2;
-  padding: 40px;
+  padding: 20px;
   background-color: black;
   border-radius: 30px;
   background-color: rgb(0, 41, 58);
@@ -99,11 +109,13 @@
 
 .my-foto {
   display: block;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   margin-left: auto;
   margin-right: auto;
   background-color: rgb(0, 41, 58);
+  border-radius: 50%;
+  opacity: 0.7;
 }
 
 .portfolio__img {
@@ -114,7 +126,7 @@
 
 .skills {
   grid-area: 2/1/2/2;
-  padding: 40px;
+  padding: 20px;
   background-color: black;
   border-radius: 30px;
   background-color: rgb(0, 41, 58);
@@ -123,7 +135,7 @@
 
 .portfolio {
   grid-area: 1/2/4/3;
-  padding: 40px;
+  padding: 20px;
   background-color: black;
   border-radius: 30px;
   background-color: rgb(0, 41, 58);
@@ -167,11 +179,12 @@
 }
 
 .button {
+  display: grid;
+  align-items: center;
   text-align: center;
   font-family: "Goldman", Sans-Serif;
   padding: 10px;
   background-color: rgb(0, 41, 58);
-  box-shadow: 0px 0px 10px black;
   border-radius: 15px;
   color: #599247;
   transition-property: box-shadow, border, color;
@@ -182,8 +195,8 @@
   font-weight: 900;
 }
 .button:hover {
+  box-shadow: 0px 0px 10px black;
   transition-duration: 0s;
-  color: white;
 }
 .button:active {
   transition-duration: 0s;
@@ -204,13 +217,13 @@
   height: 48px;
 }
 
-.sections__header, .about__header {
+.sections__header {
   margin-top: 0px;
   margin-bottom: 0px;
   text-align: center;
-  font-size: 21px;
+  font-size: 18px;
   font-family: "Orbitron", Sans-Serif;
-  color: #00c2cc;
+  color: #0095c2;
   text-transform: uppercase;
 }
 
@@ -406,9 +419,12 @@
     width: 100%;
     grid-template-columns: 1fr;
   }
+  .sections__header {
+    font-size: 15px;
+  }
   .header__hi {
     padding: 10px;
-    font-size: 28px;
+    font-size: 16px;
   }
   .header__description {
     width: 90%;
@@ -452,14 +468,16 @@
     font-size: 18px;
   }
   .about-me {
-    margin-top: 20px;
-    padding: 20px;
+    padding: 10px;
   }
   .my-foto {
     border: none;
     display: block;
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
+  }
+  .link--about {
+    font-size: 17px;
   }
   .portfolio__img {
     width: 100%;
