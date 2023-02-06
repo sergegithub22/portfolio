@@ -169,6 +169,7 @@
   display: block;
   width: 150px;
   height: 150px;
+  text-align: left;
   margin-left: auto;
   margin-right: auto;
   background-color: rgb(0, 41, 58);
@@ -347,7 +348,7 @@
   .item__description {
     text-align: center;
   }
-  .about-me, .portfolio, .skills, .about {
+  .about-me, .portfolio, .skills {
     grid-area: auto;
     padding: 20px;
   }
@@ -462,6 +463,7 @@
   }
   .sections__header {
     font-size: 15px;
+    color: #00bef8;
   }
   .header__hi {
     padding: 10px;
@@ -509,6 +511,7 @@
   }
   .text {
     font-size: 18px;
+    color: rgb(113, 191, 224);
   }
   .my-foto {
     border: none;
@@ -518,6 +521,7 @@
   }
   .link--about {
     font-size: 17px;
+    color: #85dd6b;
   }
   .portfolio__img {
     width: 100%;
@@ -528,6 +532,9 @@
     grid-template-columns: 1fr 3fr;
     grid-row-gap: 20px;
     align-items: center;
+  }
+  .skills__text {
+    color: #64a5ff;
   }
   .portfolio__img {
     width: 100%;
