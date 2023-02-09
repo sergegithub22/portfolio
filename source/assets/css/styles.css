@@ -84,6 +84,7 @@
   transition-duration: 0.5s;
   transition-timing-function: ease-out;
   text-decoration: none;
+  border-radius: 20px;
   font-size: 15px;
   font-weight: 100;
 }
@@ -497,6 +498,7 @@
   .portfolio__item {
     grid-template-columns: 1fr;
     padding: 10px;
+    background-color: rgb(0, 66, 94);
   }
   .item__description {
     text-align: center;
@@ -517,6 +519,7 @@
     grid-area: auto;
     padding: 20px;
     box-shadow: 0px 0px 8px black;
+    background-color: rgb(0, 50, 71);
   }
   .text {
     font-size: 18px;
