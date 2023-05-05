@@ -1,6 +1,5 @@
 # My portfolio
-My portfolio. Responsive.\
-Layout built on grid.
+My portfolio. Responsive.
 ### Used:
  - HTML
  - CSS

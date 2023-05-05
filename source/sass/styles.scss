@@ -10,13 +10,13 @@
   padding: 20px;
   background-color: black;
   border-radius: 30px;
-  background-color: rgb(0, 41, 58);
-  box-shadow: 0px 0px 10px black;
+  background-color: rgb(0, 66, 94);
+  // box-shadow: 0px 0px 10px black;
 }
 @mixin button_style {
   
   font-family: 'Goldman', Sans-Serif;
-  background-color: rgb(0, 41, 58);
+  background-color: rgb(0, 66, 94);
   // box-shadow: 0px 0px 10px black;
   color: #599247;
   transition-property: box-shadow, border, color;
@@ -159,15 +159,26 @@
   font-size: 20px;
   color: #A85900;
 }
+.content {
+  // max-width: 96%;
+  // height: 100%;
+  @include marg_auto;
+  background-color:rgb(0, 34, 49);
+  margin: 30px;
+  // margin-bottom: 90px;
+}
 
 // ------------------------------------------------------------------ main
 .main {
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
+  grid-template-columns: 1fr 2.5fr;
   grid-template-rows: minmax(min-content, 500px) minmax(min-content, 150px) auto;
   grid-gap: 30px;
-  margin-top: 60px;
-  max-width: 70%;
+  border: 1px solid black;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px black;
+  background-color: rgb(0, 66, 94);
+  // max-width: 95%;
   @include marg_auto;
 }
 
@@ -239,17 +250,25 @@
 
 .portfolio_items {
   display: grid;
-  grid-gap: 20px;
-  grid-template-columns: 1fr ;
+  grid-template-columns: 1fr 1fr 1fr;
+  // flex-wrap: wrap;
+  // justify-content: space-around;
+  grid-gap: 50px;
+  // grid-template-columns: auto;
 }
 .portfolio__item {
-  display: grid;
-  // grid-template-columns: 1fr 1.5fr 1fr;
-  grid-template-columns: minmax(min-content, 1.5fr) minmax(min-content, 1fr) minmax(min-content, 1fr);
-  align-items: center;
-  grid-gap: 10px;
+  display: flex;
+  flex-direction: column;
+  // flex-wrap: wrap;
+  // grid-template-rows: 1fr 1fr 1fr;
+  // grid-template-columns: minmax(min-content, 1.5fr) minmax(min-content, 1fr) minmax(min-content, 1fr);
+  // align-items: center;
+  // max-width: 220px;
+  // grid-gap: 10px;
   padding: 10px;
-  background-color: rgb(0, 41, 58);
+  // margin-right: 50px;
+  // margin-bottom: 50px;
+  background-color: rgb(0, 66, 94);
   box-shadow: 0px 0px 8px black;
   border-radius: 20px;
 }
@@ -467,14 +486,22 @@
     @include marg_auto;
     font-size: 16px;
   }
+  .content {
+    background-color: rgb(0, 34, 49);
+    width: 100%;
+    margin: 0;
+  }
   .main {
-    max-width: 90%;
+    max-width: 95%;
     @include marg_auto;
     display: grid;
-    grid-gap: 30px;
+    grid-gap: 15px;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    margin-top: 20px;
+    margin-top: 10px;
+    background-color: rgb(0, 34, 49);
+    border: none;
+    box-shadow: none;
   }
   .portfolio {
     grid-template-rows: 1fr;
