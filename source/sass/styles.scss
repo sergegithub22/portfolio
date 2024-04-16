@@ -41,7 +41,7 @@
 // ------------------------------------------------------------------ common
 .body {
   @include pad_marg_0;
-  background-color: rgb(0, 34, 49);
+  background-color: rgb(0, 66, 94);;
 }
 * {
   box-sizing: border-box;
@@ -52,7 +52,9 @@
   color: rgb(85, 146, 172);
   font-weight: 100;
 }
-
+.text-align-center {
+  text-align: center;
+}
 
 .font--10 {
   font-size: 10px;
@@ -79,13 +81,23 @@
   text-decoration: none;
   color: #599247;
   font-size: 20px;
-  &:hover {
-  }
   &--about {
     width: 100%;
     display: block;
     padding: 10px;
     text-align: center;
+    @include marg_auto;
+    &:hover {
+      background-color: rgb(0, 49, 70);
+      border-radius: 20px;
+    }
+  }
+  &--port-item {
+    width: 100%;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
     @include marg_auto;
     &:hover {
       background-color: rgb(0, 49, 70);
@@ -183,9 +195,9 @@
   grid-template-columns: 1fr 2.5fr;
   grid-template-rows: minmax(min-content, 500px) minmax(min-content, 150px) auto;
   grid-gap: 10px;
-  border: 1px solid black;
-  border-radius: 15px;
-  box-shadow: 0px 0px 10px black;
+  // border: 1px solid black;
+  // border-radius: 15px;
+  // box-shadow: 0px 0px 10px black;
   background-color: rgb(0, 66, 94);
   // max-width: 95%;
   @include marg_auto;
@@ -202,7 +214,7 @@
 }
 .about {
   border-radius: 15px;
-  box-shadow: 0px 0px 10px black;
+  // box-shadow: 0px 0px 10px black;
   padding: 30px;
 }
 .my-foto {
@@ -215,7 +227,9 @@
   border-radius: 50%;
   opacity: 0.7;
 }
-
+.resume__text {
+  // text-align: center;
+}
 // ------------------------------------------------------------------ skills
 .skills {
   grid-area: 2 / 1 / 2 / 2;
@@ -232,7 +246,7 @@
   grid-gap: 20px;
   justify-content: center;
   border-radius: 15px;
-  box-shadow: 0px 0px 10px black;
+  // box-shadow: 0px 0px 10px black;
   padding: 30px;
 }
 .skills__item {
@@ -241,12 +255,13 @@
   padding: 3px;
   text-align: center;
   color: #006aff;
-  box-shadow: 0px 0px 8px black;
-  border-radius: 15px;
+  box-shadow: 0px 0px 3px rgb(0, 34, 49);
+  border: 1px solid rgb(0, 34, 49);
+  border-radius: 13px;
 }
 .skills__text {
   font-size: 20px;
-  color: #006aff;
+  color: #b08eff;
   font-weight: 500;
 }
 
@@ -254,9 +269,9 @@
 .portfolio__img {
   width: 100%;
   height: 100%;
-  // border-radius: 15px;
+  border-radius: 15px;
   background-color: #00293A;
-  opacity: 0.5;
+  opacity: 0.6;
   transition-property: opacity;
   transition-duration: 0.7s;
   transition-timing-function: ease-out;
@@ -288,7 +303,7 @@
   // margin-right: 50px;
   // margin-bottom: 50px;
   background-color: rgb(0, 66, 94);
-  box-shadow: 0px 0px 8px black;
+  box-shadow: none;
   border-radius: 20px;
 }
 
@@ -306,10 +321,10 @@
   }
 }
 .description__h3--name {
-  color: #4d97ff;
+  color: #81b4fc;
 }
 .description__h3--desc {
-  font-size: 15px;
+  font-size: 13px;
   color: rgb(85, 146, 172);
 }
 .description__span--tech {
@@ -322,9 +337,14 @@
   height: 100%;
   display: grid;
   align-content: space-around;
-  &:last-child {
-    color: red;
-  }
+  margin-top: 15px;
+  // &:last-child {
+  //   font-size: 20px;
+    
+  // }
+}
+.lastbtn:hover {
+  border-radius: 0 0 15px 15px;
 }
 .skills__list {
   display: grid;
@@ -569,16 +589,17 @@
     padding-top: 0;
     padding-bottom: 0;
     background-color: rgb(0, 66, 94);
+    box-shadow: 0px 0px 8px rgb(0, 42, 59);;
 //    border: 2px solid #1311FF;
   }
   .item__description {
     text-align: center;
   }
   .description__h3--name {
-    color: #7cb3ff;
+    color: #b1d1fd;
   }
   .description__h3--desc {
-    color: rgb(124, 216, 255);
+    color: rgb(136, 149, 221);
   }
   .description__span--tech {
     color: #64a5ff;
