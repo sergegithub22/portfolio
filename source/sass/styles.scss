@@ -24,12 +24,12 @@
   transition-timing-function: ease-out;
 }
 @font-face {
-  font-family: "FiraSansExtraCondensed";
+  font-family: 'Orbitron';
   font-style: normal;
   src: url('../fonts/Orbitron-VariableFont_wght.ttf'); 
 }
 @font-face {
-  font-family: "Goldman";
+  font-family: 'FiraSansExtraCondensed';
   font-style: normal;
   src: url('../fonts/FiraSansExtraCondensed-Regular.ttf'); 
 }
@@ -43,11 +43,9 @@
   @include pad_marg_0;
   background-color: rgb(0, 66, 94);;
 }
-
 * {
   box-sizing: border-box;
 }
-
 .text {
   font-family: 'FiraSansExtraCondensed', Sans-Serif;
   font-size: 20px;
@@ -78,9 +76,8 @@
   color: #0095c2;
   text-transform: uppercase;
 }
-
 .link {
-  font-family: "Goldman", Sans-Serif;
+  font-family: 'Goldman', Sans-Serif;
   text-decoration: none;
   color: #599247;
   font-size: 20px;
@@ -157,10 +154,9 @@
   color: #4d97ff;
   font-size: 25px;
   font-weight: 700;
-  font-family: "Goldman", Sans-Serif;
+  font-family: 'Goldman', Sans-Serif;
   text-transform: uppercase;
 }
-
 .header__name {
   padding: 10px;
   margin-top: 0px;
@@ -172,16 +168,14 @@
   font-family: 'Goldman', Sans-Serif;
   text-transform: uppercase;
 }
-
 .header__description {
   margin-top: 0px;
   text-align: center;
   color: #4d97ff;
   font-size: 20px;
-  font-family: "Goldman", Sans-Serif;
+  font-family: 'Goldman', Sans-Serif;
   text-transform: uppercase;
 }
-
 .header__left {
   font-size: 20px;
   color: #A85900;
@@ -223,7 +217,6 @@
   // box-shadow: 0px 0px 10px black;
   padding: 30px;
 }
-
 .my-foto {
   display: block;
   width: 100px;
@@ -243,16 +236,10 @@
   @include main_elms_style;
   padding-top: 0;
 }
-
 .portfolio {
-  grid-area: 1/2/4/3;
-  padding: 40px;
-  background-color: black;
-  border-radius: 30px;
-  border: 3px solid #0008a8;
-  box-shadow: 0px 0px 18px #0008a8;
+  grid-area: 1 / 2 / 4 / 3;
+  @include main_elms_style;
 }
-
 .skills__items {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
@@ -262,7 +249,6 @@
   // box-shadow: 0px 0px 10px black;
   padding: 30px;
 }
-
 .skills__item {
   display: block;
   font-family: 'Goldman', Sans-Serif; 
@@ -273,7 +259,6 @@
   border: 1px solid rgb(0, 34, 49);
   border-radius: 13px;
 }
-
 .skills__text {
   font-size: 20px;
   color: #709bfe;
@@ -305,7 +290,6 @@
   grid-gap: 50px;
   // grid-template-columns: auto;
 }
-
 .portfolio__item {
   display: flex;
   flex-direction: column;
@@ -349,7 +333,6 @@
   color: #006aff;
   font-family: 'Orbitron';
 }
-
 .portfolio__links {
   height: 100%;
   display: grid;
@@ -363,50 +346,41 @@
 .lastbtn:hover {
   border-radius: 0 0 15px 15px;
 }
-
 .skills__list {
   display: grid;
   grid-template-columns: 1fr 5fr;
   grid-gap: 20px;
   align-items: center;
 }
-
 .skill__name {
   margin: 0px;
   color: #006aff;
-  font-family: "Orbitron", Sans-Serif;
+  font-family: 'Orbitron', Sans-Serif;
   text-transform: uppercase;
 }
-
 .skill__line {
   height: 12px;
   border: 1px solid #3C004A;
 }
-
 .skill__value {
   height: 10px;
   background-color: rebeccapurple;
   text-align: center;
   font-weight: 700;
-  color: white;
+  color: white
 }
-
 .html {
   width: 60%;
 }
-
 .css {
   width: 50%;
 }
-
 .scss {
   width: 10%;
 }
-
 .js {
   width: 10%;
 }
-
 .bem {
   width: 20%;
 }
@@ -421,8 +395,7 @@
 @media (max-width: 1570px) and (min-width: 1180px) {
   .main {
     width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+    @include marg_auto;
     display: grid;
     grid-gap: 30px;
     grid-template-columns: 1fr;
@@ -453,20 +426,20 @@
   .resume__text {
     grid-area: 3/2/4/3
   }
-  .portfolio__img {
+ .portfolio__img {
     width: 100%;
-    height: 100%;
+    height: 100%; 
   }
   .portfolio_items {
     grid-gap: 20px;
     grid-template-columns: 1fr 1fr;
   }
   .skills__items {
-    grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(6, 1fr); 
   }
   .skills__text {
-    font-size: 28px;
-    font-weight: 900;
+  font-size: 28px;
+  font-weight: 900;
   }
 }
 @media (max-width: 1179px) and (min-width: 719px) {
@@ -520,7 +493,7 @@
     padding: 20px;
   }
   .skills__items {
-    grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(6, 1fr); 
   }
 }
 @media (max-width: 720px) and (min-width: 499px) {
@@ -530,13 +503,11 @@
   }
   .header__description {
     width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    @include marg_auto;
   }
   .main {
     width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    @include marg_auto;
     display: grid;
     grid-gap: 30px;
     grid-template-columns: 1fr;
@@ -549,6 +520,7 @@
   .portfolio__item {
     grid-template-columns: 1fr;
     padding: 10px;
+//    border: 2px solid #1311FF;
   }
   .portfolio__links {
     grid-gap: 10px;
@@ -559,8 +531,8 @@
   }
   .text {
     font-size: 18px;
-  }
-  .portfolio__img {
+}  
+ .portfolio__img {
     width: 100%;
     height: 100%;
   }
@@ -581,8 +553,7 @@
   }
   .header__description {
     width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    @include marg_auto;
     font-size: 16px;
   }
   .content {
@@ -676,7 +647,7 @@
     font-size: 17px;
     color: #85dd6b;
   }
-  .portfolio__img {
+ .portfolio__img {
     width: 100%;
     height: 100%;
     opacity: 0.8;
