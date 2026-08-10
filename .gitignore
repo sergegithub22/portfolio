@@ -1,0 +1,7 @@
+node_modules/
+new_style/
+gulpfile.js
+package-lock.json
+package.json
+Thumbs.db
+.gitignor
